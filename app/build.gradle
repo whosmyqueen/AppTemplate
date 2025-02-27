@@ -162,6 +162,8 @@ dependencies {
     implementation "com.github.jenly1314:kvcache:$versions.kvcache"
 
     implementation "com.github.jenly1314:imageviewer:$versions.imageviewer"
+
+    implementation "com.github.ibrahimsn98:SmoothBottomBar:1.7.9"
 //    implementation "com.github.jenly1314:GuidePage:$versions.guidepage"
 
 //    implementation "de.hdodenhof:circleimageview:$versions.circleimageview"

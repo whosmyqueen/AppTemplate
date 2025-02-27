@@ -43,6 +43,14 @@ class HomeActivity : BaseActivity<HomeViewModel, HomeActivityBinding>() {
                 finish()
             }
         }
+        binding.bottomBar.setOnItemSelectedListener {
+            when (it) {
+                0 -> showFragment(HomeMenu.MENU1)
+                1 -> showFragment(HomeMenu.MENU2)
+                2 -> showFragment(HomeMenu.MENU3)
+                3 -> showFragment(HomeMenu.MENU4)
+            }
+        }
     }
 
     override fun getLayoutId(): Int {
@@ -103,12 +111,12 @@ class HomeActivity : BaseActivity<HomeViewModel, HomeActivityBinding>() {
 
 
     override fun onClick(v: View) {
-        when (v.id) {
-            R.id.rbMenu1 -> showFragment(HomeMenu.MENU1)
-            R.id.rbMenu2 -> showFragment(HomeMenu.MENU2)
-            R.id.rbMenu3 -> showFragment(HomeMenu.MENU3)
-            R.id.rbMenu4 -> showFragment(HomeMenu.MENU4)
-        }
+//        when (v.id) {
+//            R.id.rbMenu1 -> showFragment(HomeMenu.MENU1)
+//            R.id.rbMenu2 -> showFragment(HomeMenu.MENU2)
+//            R.id.rbMenu3 -> showFragment(HomeMenu.MENU3)
+//            R.id.rbMenu4 -> showFragment(HomeMenu.MENU4)
+//        }
     }
 
 }

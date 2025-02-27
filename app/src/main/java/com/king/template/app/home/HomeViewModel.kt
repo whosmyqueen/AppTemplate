@@ -27,10 +27,10 @@ class HomeViewModel @Inject constructor(repository: Repository, application: App
         launch {
             // TODO 模拟请求
             val data = arrayOf(
-                "https://jenly.pages.dev/medias/banner/1.jpg",
-                "https://jenly.pages.dev/medias/banner/2.jpg",
-                "https://jenly.pages.dev/medias/banner/3.jpg",
-                "https://jenly.pages.dev/medias/banner/4.jpg"
+                "https://pic41.photophoto.cn/20161130/0018070892269806_b.jpg",
+                "https://pic41.photophoto.cn/20161130/0018070892269806_b.jpg",
+                "https://pic41.photophoto.cn/20161130/0018070892269806_b.jpg",
+                "https://pic41.photophoto.cn/20161130/0018070892269806_b.jpg"
             )
             delay(1000)
             liveDataBanner.value = data.map { BannerBean(it) }
