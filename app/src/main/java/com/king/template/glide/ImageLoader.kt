@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 object ImageLoader {
 
 
-    fun displayImage(iv: ImageView, url: String?, defaultImage: Int){
+    fun displayImage(iv: ImageView, url: String?, defaultImage: Int) {
         url?.let {
             GlideApp.with(iv).load(url).placeholder(defaultImage).error(defaultImage).into(iv)
         } ?: run {
@@ -19,7 +19,7 @@ object ImageLoader {
         }
     }
 
-    fun displayImage(context: Context, iv: ImageView, url: String?, defaultImage: Int){
+    fun displayImage(context: Context, iv: ImageView, url: String?, defaultImage: Int) {
         url?.let {
             GlideApp.with(context).load(url).placeholder(defaultImage).error(defaultImage).into(iv)
         } ?: run {
@@ -27,7 +27,7 @@ object ImageLoader {
         }
     }
 
-    fun displayImage(fragment: Fragment, iv: ImageView, url: String?, defaultImage: Int){
+    fun displayImage(fragment: Fragment, iv: ImageView, url: String?, defaultImage: Int) {
         url?.let {
             GlideApp.with(fragment).load(url).placeholder(defaultImage).error(defaultImage).into(iv)
         } ?: run {
@@ -35,7 +35,7 @@ object ImageLoader {
         }
     }
 
-    fun displayImage(activity: Activity, iv: ImageView, url: String?, defaultImage: Int){
+    fun displayImage(activity: Activity, iv: ImageView, url: String?, defaultImage: Int) {
         url?.let {
             GlideApp.with(activity).load(url).placeholder(defaultImage).error(defaultImage).into(iv)
         } ?: run {
